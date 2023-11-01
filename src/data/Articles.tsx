@@ -1,4 +1,12 @@
-export const Articles = [
+export interface IArticle {
+  id: number;
+  title: string;
+  details: string[];
+  description: string;
+  imageUrl: string;
+}
+
+export const Articles: IArticle[] = [
   {
     id: 1,
     title: "Blog Card Component",
@@ -7,7 +15,6 @@ export const Articles = [
       "In this frontend challenge, you'll build a Blog Card Component. This challenge is perfect for you if you've been learning css and ..",
     imageUrl:
       "https://www.frontendpro.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdi5hmgowi%2Fimage%2Fupload%2Fv1%2Fchallenges%2Fblog-card-component%2Fdesktop-cover.png&w=640&q=75",
-   
   },
   {
     id: 2,

@@ -6,6 +6,13 @@ const Resources: React.FC = () => {
   return (
     <div className="container mx-auto">
       <Header />
+      <Header
+        title="Explore Solutions"
+        description={`Find solutions to frontend coding challenges submitted by fellow
+        developers. Get inspired, learn new techniques and improve your skills.
+        🚀`}
+        color="purple"
+      />
       <main>
         <section className="rounded-lg bg-gray-900 border border-gray-700 p-6">
           <h1 className="block bg-clip-text text-transparent font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center pb-4 bg-gradient-to-r from-green-200 via-green-300 to-blue-500">

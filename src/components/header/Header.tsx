@@ -1,5 +1,7 @@
 import React from "react";
 
+type colorType = "purple" | "pink" | "green"
+
 const Header: React.FC = () => {
   return (
     <header className="rounded-lg w-full bg-gray-900 border border-gray-700 p-8 mb-3">

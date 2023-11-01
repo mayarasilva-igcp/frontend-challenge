@@ -1,3 +1,5 @@
+import GitHubIcon from "../../assets/Header/GitHub.svg";
+
 function Aside() {
   return (
     <div className="flex flex-col gap-3 px-3">
@@ -36,23 +38,11 @@ function Aside() {
                   className="flex items-center px-3 py-[10px] text-base rounded-lg text-white hover:bg-indigo-600  transition duration-75 font-normal group undefined false"
                   href="/resources">
                   <span className="flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="w-6 h-6 transition duration-75 text-gray-300 group-hover:text-white">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <rect x="4" y="4" width="16" height="16" rx="1"></rect>
-                      <path d="M4 8h16"></path>
-                      <path d="M8 4v4"></path>
-                      <path d="M9.5 14.5l1.5 1.5l3 -3"></path>
-                    </svg>
+                    <img
+                      className="w-6 h-6 transition duration-75 text-gray-300 group-hover:text-white"
+                      alt=""
+                      src={GitHubIcon}
+                    />
                   </span>
                   <span className="ml-3">Resources</span>
                 </a>
