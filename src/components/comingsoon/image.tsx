@@ -8,7 +8,7 @@ interface ImageProps {
   className?: string;
 }
 
-const CustomImage: React.FC<ImageProps> = ({
+export const CustomImage: React.FC<ImageProps> = ({
   alt,
   width,
   height,
@@ -26,5 +26,3 @@ const CustomImage: React.FC<ImageProps> = ({
     src={src}
   />
 );
-
-export default CustomImage;

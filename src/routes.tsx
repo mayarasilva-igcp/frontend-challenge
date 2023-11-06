@@ -1,9 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import Roadmaps from "./components/Roadmaps/Roadmaps";
-import Resources from "./components/Resources/Resources";
-import Solutions from "./components/Solutions/Solutions";
+import { Roadmaps } from "./pages/Roadmaps";
+import { Resources } from "./pages/Resources";
+import { Solutions } from "./pages/Solutions";
 
 export const IndexRoutes = (): JSX.Element => (
   <Router>

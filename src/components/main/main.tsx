@@ -1,11 +1,8 @@
 import React from "react";
-import Aside from "../aside/Aside";
-// import Resources from "../Resources/Resources";
+import { Aside } from "../aside/Aside";
 import { NavBar } from "../navbar/NavBar";
-import Header from "../header/Header";
-import Roadmaps from "../Roadmaps/Roadmaps";
-import Solutions from "../Solutions/Solutions";
 import { IndexRoutes } from "../../routes";
+import { Footer } from "../footer/Footer";
 
 const Main: React.FC = () => {
   return (
@@ -17,6 +14,7 @@ const Main: React.FC = () => {
           <IndexRoutes />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

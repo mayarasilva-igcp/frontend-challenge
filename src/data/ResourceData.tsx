@@ -1,4 +1,12 @@
-export const ResourcesData = [
+export interface IResources {
+  id: number;
+  title: string;
+  details: string[];
+  description: string;
+  imageUrl: string;
+}
+
+export const ResourcesData: IResources[] = [
   {
     id: 1,
     title: "Jargon free frontend development",
@@ -64,7 +72,7 @@ export const ResourcesData = [
     imageUrl:
       "https://www.frontendpro.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdi5hmgowi%2Fimage%2Fupload%2Fv1%2Fresources%2Fresource_2.png&w=1920&q=75",
   },
-  
+
   {
     id: 8,
     title: "Polypane",
