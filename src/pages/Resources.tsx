@@ -1,5 +1,5 @@
 import React from "react";
-import { ResourcesCards } from "../components/cards/Card";
+import { ResourcesCards } from "../components/card/Card";
 import { Header } from "../components/header/Header";
 
 export const Resources: React.FC = () => {
@@ -16,5 +16,3 @@ export const Resources: React.FC = () => {
     </div>
   );
 };
-
-

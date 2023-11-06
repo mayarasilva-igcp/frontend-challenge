@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../components/header/Header";
-import { SolutionsCards } from "../components/cards/Card";
+import { SolutionsCards } from "../components/card/Card";
 
 export const Solutions: React.FC = () => {
   return (
