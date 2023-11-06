@@ -1,6 +1,7 @@
 import React from "react";
-import { ResourcesCards } from "../components/card/Card";
 import { Header } from "../components/header/Header";
+import { ResourcesData } from "../data/ResourceData";
+import { CardList } from "../components/card/CardList";
 
 export const Resources: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const Resources: React.FC = () => {
           title="Explore Resources"
           description="Find the best resources and developer tools for frontend development here. Whether you're a beginner or a pro, we've got you covered. Start learning today!"
         />
-        <ResourcesCards />
+        <CardList data={ResourcesData as any[]} />
       </main>
     </div>
   );

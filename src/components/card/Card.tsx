@@ -1,18 +1,8 @@
 import React from "react";
-import { Articles } from "../../data/Articles";
-import { ResourcesData } from "../../data/ResourceData";
-import {TagsList} from "../tags/Tags";
+import { TagsList } from "../tags/Tags";
+import { ICard } from "./interfaces/ICard";
 
-interface CardProps {
-  id: string;
-  imageUrl: string;
-  details: string[];
-  title: string;
-  description: string;
-}
-
-const Card: React.FC<CardProps> = ({
-  id,
+export const Card: React.FC<ICard> = ({
   imageUrl,
   details,
   title,
@@ -37,24 +27,4 @@ const Card: React.FC<CardProps> = ({
     </h3>
     <p className="font-light text-gray-400 mb-4">{description}</p>
   </article>
-);
-
-interface CardListProps {
-  data: CardProps[];
-}
-
-const CardList: React.FC<CardListProps> = ({ data }) => (
-  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-    {data.map((item) => (
-      <Card key={item.id} {...item} />
-    ))}
-  </div>
-);
-
-export const SolutionsCards: React.FC = () => (
-  <CardList data={Articles.map((article) => ({ ...article, id: article.id.toString() }))} />
-);
-
-export const ResourcesCards: React.FC = () => (
-  <CardList data={ResourcesData.map((resource) => ({ ...resource, id: resource.id.toString() }))} />
 );
