@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../components/header/Header";
-import { SolutionsCards } from "../components/card/Card";
+import { CardList } from "../components/card/CardList";
+import { Articles } from "../data/Articles";
 
 export const Solutions: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ export const Solutions: React.FC = () => {
 
       <main>
         <section className="rounded-lg bg-gray-900 border border-gray-700 p-6">
-          <SolutionsCards />
+          <CardList data={Articles as any[]} />
         </section>
       </main>
     </div>
